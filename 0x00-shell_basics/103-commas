@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -1Ap | tr '\n' ','; echo)
+find . -maxdepth 1 | sort -k 1.3d,1.4n -k 1.1,1.2d -t '/' | sed 's/^\.\//\.\//' | tr '\n' ','
