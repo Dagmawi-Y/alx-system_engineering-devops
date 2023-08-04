@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ./* ../* .[^.]*/ .[!.]*/ | tr ' ' '\n' | sort -t/ -k 2,2 -k 1,1 | tr '\n' ','
+ls -pamv
