@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | sort -n -t . -k 1,1 -k 2,2 | sed '1i.,..,'
+echo ./* ../* .[^.]*/ .[!.]*/ | tr ' ' '\n' | sort -t/ -k 2,2 -k 1,1 | tr '\n' ','
